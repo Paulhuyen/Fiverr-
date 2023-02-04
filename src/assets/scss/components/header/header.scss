@@ -1,0 +1,174 @@
+@import '../../themes/variables.scss';
+
+
+.main-header{
+        background-color: transparent;
+        position: fixed;
+        color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: auto;
+        z-index: 1000;
+
+        // .menu_categories{
+        //     display: none;
+        // }
+
+    .header-package{
+        .header-row-wrapper{
+            padding: 15px 0;
+
+            .header-row{
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                justify-content: space-between;
+                .header_bars-btn{
+                    width: 28px;
+                    height: 28px;
+                    background-color: $cl-white;
+                    display: none;
+                };
+                .logo-fiverr_mobile{
+                    display: none;
+                }
+    
+                .fiverr-header-search{
+                    .search-bar-package {
+                        display: none;
+                    }
+                }
+
+                .fiverr-right{
+                    font-weight: $fw-600;
+                    .fiverr-right-wrapper{
+                        display: flex;
+                        li{
+                        padding-left: 15px;
+                        .fiverr-join{
+                            border: 1px solid $cl-green-1 ;
+                            text-align: center;
+                            padding:  10px 15px;
+                            color: $cl-green-1;
+                            border-radius: 5px;
+                            transition: ease-in-out 0.5s;
+                            &:hover{
+                                background-color: $cl-green-1;
+                                color: white;
+                            }
+                        }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+.header_overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10004;
+    background-color: rgba(0, 0, 0, 0.274);
+    display: none;
+
+}
+.header_close-btn{
+    width: 18px;
+    height: 28px;
+}
+.header-package_mobile{
+    .header-row-wrapper_mobile{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        max-width: 100%;
+        background-color: white;
+        z-index: 10005;
+        transform: translateY(-100%);
+            .header-row_mobile{
+                padding: 20px 30px;
+                position: relative;
+                .header_close-btn{
+                    position: absolute;
+                    top: 10px;
+                    right: 15px;
+                    .fa-circle-xmark{
+                        width: 28px;
+                        height: 28px;
+                    }
+                }
+            }
+    }
+}
+.nav_input:checked ~ .header-package_mobile{
+    .header-row-wrapper_mobile{
+        transform: translateY(0%);
+ 
+    }
+}
+.nav_input:checked ~ .header_overlay{
+    display: block;
+
+}
+@media (max-width: 992px ){
+    .main-header{
+        color: black;
+        background-color: white;
+        transition: .3s ease-in-out;
+        .menu_categories{
+            display: none;
+        }
+        .header-package{
+            .header-row-wrapper{
+                .header-row{
+                    .logo-fiverr{
+                        display: none;
+                    }
+                    .logo-fiverr_mobile{
+                        display: block;
+                    }
+                    .header_bars-btn{
+                        display: block;
+                    }
+                    .fiverr-header-search{
+                        display: none;
+                    }
+                    .fiverr-right{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+}
+// .main-header 
+.setScrollHeader{
+    color: black;
+    background-color: white;
+    transition: .3s ease-in-out;
+    margin-bottom: 60px;
+    .header-package{
+        .header-row-wrapper{
+           .header-row{
+            .fiverr-header-search{
+                .search-bar-package{
+                    display: 
+                    block;
+                }
+            }
+           } 
+        }
+    }
+    // .menu_categories{
+    // display: block;
+    // transition: .3s ease-in-out;
+    // }
+}
+

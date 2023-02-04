@@ -1,0 +1,75 @@
+@import '../../themes/variables.scss';
+
+
+
+.CategoriesMenu{
+    border-top: 1px solid $gb-gray;
+    border-bottom: 1px solid $gb-gray;
+    width: 100%;
+    // display: none;
+    &_row{
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li{
+                .menu{
+                    padding: 10px 0;
+                    position: relative;
+                    display: block;
+                    width: max-content;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        background: $bg-green-1;
+                        height: 3px;
+                        width: 0%;
+                        bottom: 0;
+                        left: 0;
+                        transition: all 0.3s;
+                    }
+                    &:hover{
+                        color: $cl-hover;
+                        &::after{
+                            width: 100%;
+                        }
+                    }
+                }
+                .menu-sub{
+                    display: none;
+                    line-height: 24px;
+                    position: absolute;
+                    background-color: $gb-white;
+                    border: 1px solid $gb-gray;
+                    padding: 15px 25px;
+                    float: left;
+                    .menu-sub-detail{
+                        .title{
+                            font-weight: $fw-600;
+                        }
+                        margin-bottom: 15px;
+                        a:hover{
+                            color: $cl-hover;
+                        }
+                    }
+
+                }
+            }
+            li:hover{
+                .menu-sub{
+                    display: block;
+                    .menu-sub-detail{
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                }
+            }
+        }
+
+    }
+}
+
+.setScrollMenu{
+        display: none;
+        transition: all 0.5s ease;
+}

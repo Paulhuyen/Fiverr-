@@ -1,0 +1,108 @@
+.categories-wrapper{
+    margin-top: 120px ;
+    .container{
+        .categories-banner-wrapper{
+            padding: 30px 0;
+            .banner-inner{
+                width: 100%;
+                height: 237px;
+                background-position: center; /* Center the image */
+                background-repeat: no-repeat; /* Do not repeat the image */
+                background-size: cover;
+                border-radius: 10px;
+
+                background-image: url(https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/42593ecc6f1e40fd735892b99f001ea4-1631622804534/writing%20_%20translation.png);
+             .banner-content{
+                text-align: center;
+                color: white;
+                font-weight: 600;
+                padding: 50px;
+                line-height: 40px;
+                .banner-content_title{
+                    h3{
+                        font-weight: 600;
+                    }
+                }
+                .banner-button-video{
+                    button{
+                        padding: 10px 15px;
+                        background-color: transparent;
+                        border: 1px solid white;
+                        color: white;
+                        line-height: 25px;
+                        font-weight: 600; 
+                        border-radius: 5px;
+                        margin-top: 10px;
+
+                    }
+                }
+             }
+            }
+           
+        }
+        .carousel-section{
+            margin: 32px 0;
+        }
+        .cate-list_product{
+            margin-top: 38px;
+        }
+        // css list new & hot
+        .list-product-news{
+
+            .title{
+                margin-bottom: 20px;
+            }
+            margin-top: 42px;
+            .list-product-news-wrapper{
+                grid-template-columns: repeat(3,1fr);
+                display: grid;
+                column-gap: 32px;
+                row-gap: 32px;
+                .card-title{
+                    padding-top: 15px;
+                }
+                .item-news{
+                    .card-image{
+                        img:hover{
+                            scale:1.1 ;
+                        }
+                    }
+                    .card-title:hover{
+                        opacity:1 ;
+                    }
+                }
+
+            }
+            .hover-opc:hover :not(:hover){
+                opacity: 0.6;
+
+            }
+        }
+    }
+}
+
+.slides-list{
+    margin: 18px 0 32px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    .slide-item{
+        margin-right: 10px;
+        flex-wrap: nowrap;
+
+        min-width: 1rem;
+        display: flex;
+        align-items: center;
+        border: 1px solid #c4c4c4;
+        border-radius: 12px;
+        color: #404145;
+        padding: 12px;
+        box-shadow: 3px 3px 4px #fa91082a;
+        img{
+            width: 48px ;
+            height: 48px;
+        }
+        .item-center{
+            margin: 0 8px;
+        }
+    }
+}

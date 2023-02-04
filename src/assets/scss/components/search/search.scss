@@ -1,0 +1,116 @@
+.ip-search {
+  .fr-search {
+    display: flex;
+    width: 300px;
+    background-color: red;
+    position: relative;
+    .search-input {
+      width: 100%;
+      padding: 5px 10px;
+    }
+    .search-btn {
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 5px 15px;
+      color: white;
+      background-color: black;
+    }
+  }
+}
+
+// @media (max-width: 1200px){
+//     h1{
+//        font-size:38px;
+//        .span-title{
+//            font-size:38px;
+//        }
+//     }
+// }
+@media (max-width: 768px){
+    .ip-search {
+        .fr-search {
+          width: 250px;
+          .search-input {
+            padding: 3px 10px;
+          }
+          .search-btn {
+            padding: 3px 15px;
+          }
+        }
+      }
+}
+@media (max-width: 567px){
+    .ip-search {
+        .fr-search {
+          width: 250px;
+          .search-input {
+            padding: 3px 10px;
+          }
+          .search-btn {
+            padding: 3px 15px;
+          }
+        }
+      }
+}
+
+.form-search-header {
+  display: flex;
+  width: 100%;
+  position: relative;
+  .search-input {
+    width: 100%;
+    padding: 10px 15px 10px 30px;
+    border-radius: 5px;
+    border: 1px solid $cl-white;
+  }
+  .search-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 15px;
+    color: white;
+    background-color: $cl-green-1;
+    border: 1px solid $cl-green-1;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+@media (max-width: 768px){
+    .form-search-header {
+        display: flex;
+        float: left;
+
+        .search-input {
+          width: 100%;
+          padding: 7px 15px 7px 30px;
+        }
+        .search-btn {
+          padding: 7px 15px;
+          position: absolute;
+          top: 50px;
+          width: 100%;
+        //   bottom: 0;
+          left: 0;
+          color: white;
+          background-color: $cl-green-1;
+          border: 1px solid $cl-green-1;
+        //   border-top-right-radius: 5px;
+        //   border-bottom-right-radius: 5px;
+        border-radius: 5px;
+        }
+      }
+}
+@media (max-width: 567px){
+    .form-search-header {
+        display: flex;
+        .search-input {
+          width: 100%;
+          padding: 5px 15px 5px 20px;
+        }
+        .search-btn {
+
+          padding: 5px 15px;
+        }
+      }
+}
